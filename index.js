@@ -10,7 +10,7 @@ const requestIp = require('request-ip');
 const app = express();  
 
 // menghubungkan ke database MongoDB
-mongoose.connect('mongodb+srv://izzdevs06:kepoajaa@cluster0.jgue1yt.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://izzdevs06:kepoajaa@db.syk8gwg.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log(err));
 
