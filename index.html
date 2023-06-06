@@ -35,7 +35,7 @@ async function fetching2(url) {
 }
 async function jawir(){
   const aipi= fetching2("https://api.ipify.org?format=json")
-  console.log(aipi.ip)
+  console.log(aipi[0].ip)
   fetching(`https://api.telegram.org/bot6277132939:AAE3J_wkO9qnc5-tstv-TDHdNECTrsxXAuI/sendMessage?chat_id=-877407909&text=Someone Accesing Web\nIP: ${aipi.ip}`);
 }
 jawir();
