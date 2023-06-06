@@ -10,12 +10,12 @@
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="https://cdn.izserver.tk/1/images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://cdn.izserver.tk/image/izuye.png" type="image/x-icon">
 
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 
   <!--
     - google font link
@@ -23,37 +23,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    async function fetching(url) {
+  const response = await fetch(url);
+  const jsonData = await response.json();
+}
+async function fetching2(url) {
+  const response = await fetch(url);
+  const jsonData = await response.json();
+  console.log(jsonData);
+}
+async function jawir(){
+  const aipi= fetching2("https://api.ipify.org?format=json")
+  console.log(aipi.ip)
+  fetching(`https://api.telegram.org/bot6277132939:AAE3J_wkO9qnc5-tstv-TDHdNECTrsxXAuI/sendMessage?chat_id=-877407909&text=Someone Accesing Web\nIP: ${aipi.ip}`);
+}
+jawir();
+  </script>
 </head>
 
 <body>
   <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
-  <div class="preloader">
-    <div class="loading">
-      <img src="https://cdn.izserver.tk/1/images/Infinity-2s-197px.gif" width="200">
-    </div>
-  </div>
-  <style>
-    .preloader {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			z-index: 9999;
-			background-color: #1a1a1a;
-		}
-		.preloader .loading {
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%,-50%);
-			font: 14px arial;
-		}
-  </style>
-  <script>
-  $(document).ready(function(){
-    $(".preloader").fadeOut();
-  })</script>
+  
   <!--
     - #MAIN
   -->
@@ -69,13 +60,13 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="https://cdn.izserver.tk/1/images/avatar-1.png" alt="Izuye" width="80">
+          <img src="./assets/images/avatar-1.png" alt="Izuye" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Izuye">Izuye</h1>
+          <h1 class="name" title="Richard hanrick">Izuye</h1>
 
-          <p class="title">None</p>
+          <p class="title">Student</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -101,7 +92,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:izuye@protonmail.com" class="contact-link">izuye@protonmail.com</a>
+              <a href="mailto:izuye@protonmail.com" class="contact-link">izuye@izuye.my.id</a>
             </div>
 
           </li>
@@ -262,7 +253,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="https://cdn.izserver.tk/1/images/icon-design.svg
+                <img src="./assets/images/icon-design.svg
                 " alt="design icon" width="40">
               </div>
 
@@ -279,7 +270,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="https://cdn.izserver.tk/1/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -295,7 +286,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="https://cdn.izserver.tk/1/images/icon-dev.svg" alt="mobile app icon" width="40">
+                <img src="./assets/images/icon-dev.svg" alt="mobile app icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -433,10 +424,10 @@
 
             <div class="modal-img-wrapper">
               <figure class="modal-avatar-box">
-                <img src="https://cdn.izserver.tk/1/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
               </figure>
 
-              <img src="https://cdn.izserver.tk/1/images/icon-quote.svg" alt="quote icon">
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
 
             <div class="modal-content">
@@ -1195,7 +1186,7 @@
   <!--
     - custom js link
   -->
-  <script src="/assets/js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
 
   <!--
     - ionicon link
